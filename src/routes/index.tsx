@@ -492,6 +492,89 @@ function Portfolio() {
             </div>
           </article>
 
+          <article className="mt-6 overflow-hidden rounded-3xl border border-border bg-card shadow-card">
+            <div className="bg-gradient-to-r from-pink to-primary px-7 py-8 text-primary-foreground">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] opacity-90">
+                Built on Lovable
+              </p>
+              <h3 className="mt-2 text-2xl font-semibold sm:text-3xl">AI Workspace Assistant</h3>
+            </div>
+            <div className="p-7">
+              <p className="text-base leading-relaxed text-muted-foreground">
+                Built a practical AI Workspace Assistant to help with everyday professional tasks
+                such as drafting emails, writing documents, summarising notes, organising tasks and
+                improving productivity. The project applies the prompting and responsible-AI skills
+                I gained through my Google AI Essentials courses.
+              </p>
+
+              <h4 className="mt-8 text-sm font-semibold uppercase tracking-wider text-primary">
+                Key features
+              </h4>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {[
+                  "AI-powered workspace assistance",
+                  "Email and message drafting",
+                  "Document drafting and editing support",
+                  "Task organisation and prioritisation",
+                  "Meeting notes and summaries",
+                  "Spreadsheet and data assistance",
+                  "Responsible AI usage prompts",
+                  "Professional UI/UX",
+                  "Responsive design",
+                ].map((f) => (
+                  <div
+                    key={f}
+                    className="rounded-lg border border-border bg-background px-4 py-3 text-sm"
+                  >
+                    {f}
+                  </div>
+                ))}
+              </div>
+
+              <h4 className="mt-10 text-sm font-semibold uppercase tracking-wider text-primary">
+                Project highlights
+              </h4>
+              <div className="mt-4 grid gap-5 lg:grid-cols-3">
+                <div className="rounded-2xl bg-secondary p-5">
+                  <p className="font-semibold text-secondary-foreground">The problem it solves</p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Professionals spend a lot of time on repetitive writing, organising and
+                    communication tasks. The assistant helps them draft, refine and manage everyday
+                    work more efficiently.
+                  </p>
+                </div>
+                <div className="rounded-2xl bg-secondary p-5">
+                  <p className="font-semibold text-secondary-foreground">What it includes</p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    A clean workspace interface, prompts for emails, documents, summaries and task
+                    planning, plus guidance for reviewing AI output before use.
+                  </p>
+                </div>
+                <div className="rounded-2xl bg-secondary p-5">
+                  <p className="font-semibold text-secondary-foreground">Skills demonstrated</p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Practical AI integration, workflow design, user-centred thinking, attention to
+                    detail and responsible use of AI in a work context.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Button asChild variant="hero">
+                  <a href="#" aria-label="View the AI Workspace Assistant project (link to be added)">
+                    View Project <ExternalLink />
+                  </a>
+                </Button>
+                <Button asChild variant="outline">
+                  <a href="#">View Source / Details</a>
+                </Button>
+              </div>
+              <p className="mt-3 text-xs text-muted-foreground">
+                Placeholder links — update these with your live project and source URLs.
+              </p>
+            </div>
+          </article>
+
           <article className="mt-6 rounded-3xl border border-dashed border-primary/30 bg-card/60 p-8 text-center">
             <h3 className="text-xl font-semibold">More Projects Coming Soon</h3>
             <p className="mx-auto mt-3 max-w-xl text-sm text-muted-foreground">
