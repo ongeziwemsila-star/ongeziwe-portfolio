@@ -313,6 +313,32 @@ function Portfolio() {
           </div>
         </Section>
 
+        {/* CERTIFICATIONS */}
+        <Section
+          id="certifications"
+          eyebrow="Certifications"
+          title="Google AI Essentials and related credentials"
+          intro="Completed a focused set of Google AI courses that strengthened my practical understanding of AI tools, responsible use and productivity improvement."
+        >
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {certifications.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-2xl border border-border bg-card p-6 shadow-card transition-transform hover:-translate-y-1"
+              >
+                <div className="flex items-center gap-3">
+                  <Award className="size-5 text-primary" />
+                  <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                    {item.issuer}
+                  </span>
+                </div>
+                <h3 className="mt-3 text-base font-semibold leading-snug">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.detail}</p>
+              </article>
+            ))}
+          </div>
+        </Section>
+
         {/* EXPERIENCE */}
         <Section
           id="experience"
