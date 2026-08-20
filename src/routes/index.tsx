@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowRight,
+  Award,
   BadgeCheck,
   BrainCircuit,
   Briefcase,
@@ -116,6 +117,39 @@ const education = [
     year: "12-month learnership",
     detail:
       "Built my understanding of IT systems, hardware and software support, troubleshooting methods, technical support processes and how business technology supports daily operations.",
+  },
+];
+
+const certifications = [
+  {
+    title: "Discover the art of prompting",
+    issuer: "Google AI Essentials",
+    detail: "Learned how to write clear, specific prompts to get useful, accurate responses from AI tools.",
+  },
+  {
+    title: "Google AI Essentials",
+    issuer: "Google",
+    detail: "Covered core AI concepts, practical workplace applications and responsible AI use.",
+  },
+  {
+    title: "Introduction to AI",
+    issuer: "Google",
+    detail: "Built a solid foundation in artificial intelligence, machine learning basics and real-world use cases.",
+  },
+  {
+    title: "Maximize productivity with AI tools",
+    issuer: "Google",
+    detail: "Explored how AI assistants can streamline routine tasks, drafting, research and daily workflows.",
+  },
+  {
+    title: "Stay ahead of the AI curve",
+    issuer: "Google",
+    detail: "Developed awareness of emerging AI trends and how to keep skills current in a changing workplace.",
+  },
+  {
+    title: "Use AI responsibly",
+    issuer: "Google",
+    detail: "Learned about fairness, accuracy, privacy and transparency when using AI in professional settings.",
   },
 ];
 
@@ -279,6 +313,32 @@ function Portfolio() {
           </div>
         </Section>
 
+        {/* CERTIFICATIONS */}
+        <Section
+          id="certifications"
+          eyebrow="Certifications"
+          title="Google AI Essentials and related credentials"
+          intro="Completed a focused set of Google AI courses that strengthened my practical understanding of AI tools, responsible use and productivity improvement."
+        >
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {certifications.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-2xl border border-border bg-card p-6 shadow-card transition-transform hover:-translate-y-1"
+              >
+                <div className="flex items-center gap-3">
+                  <Award className="size-5 text-primary" />
+                  <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                    {item.issuer}
+                  </span>
+                </div>
+                <h3 className="mt-3 text-base font-semibold leading-snug">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.detail}</p>
+              </article>
+            ))}
+          </div>
+        </Section>
+
         {/* EXPERIENCE */}
         <Section
           id="experience"
@@ -419,6 +479,89 @@ function Portfolio() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <Button asChild variant="hero">
                   <a href="#" aria-label="View the AI Study Guide project (link to be added)">
+                    View Project <ExternalLink />
+                  </a>
+                </Button>
+                <Button asChild variant="outline">
+                  <a href="#">View Source / Details</a>
+                </Button>
+              </div>
+              <p className="mt-3 text-xs text-muted-foreground">
+                Placeholder links — update these with your live project and source URLs.
+              </p>
+            </div>
+          </article>
+
+          <article className="mt-6 overflow-hidden rounded-3xl border border-border bg-card shadow-card">
+            <div className="bg-gradient-to-r from-pink to-primary px-7 py-8 text-primary-foreground">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] opacity-90">
+                Built on Lovable
+              </p>
+              <h3 className="mt-2 text-2xl font-semibold sm:text-3xl">AI Workspace Assistant</h3>
+            </div>
+            <div className="p-7">
+              <p className="text-base leading-relaxed text-muted-foreground">
+                Built a practical AI Workspace Assistant to help with everyday professional tasks
+                such as drafting emails, writing documents, summarising notes, organising tasks and
+                improving productivity. The project applies the prompting and responsible-AI skills
+                I gained through my Google AI Essentials courses.
+              </p>
+
+              <h4 className="mt-8 text-sm font-semibold uppercase tracking-wider text-primary">
+                Key features
+              </h4>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {[
+                  "AI-powered workspace assistance",
+                  "Email and message drafting",
+                  "Document drafting and editing support",
+                  "Task organisation and prioritisation",
+                  "Meeting notes and summaries",
+                  "Spreadsheet and data assistance",
+                  "Responsible AI usage prompts",
+                  "Professional UI/UX",
+                  "Responsive design",
+                ].map((f) => (
+                  <div
+                    key={f}
+                    className="rounded-lg border border-border bg-background px-4 py-3 text-sm"
+                  >
+                    {f}
+                  </div>
+                ))}
+              </div>
+
+              <h4 className="mt-10 text-sm font-semibold uppercase tracking-wider text-primary">
+                Project highlights
+              </h4>
+              <div className="mt-4 grid gap-5 lg:grid-cols-3">
+                <div className="rounded-2xl bg-secondary p-5">
+                  <p className="font-semibold text-secondary-foreground">The problem it solves</p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Professionals spend a lot of time on repetitive writing, organising and
+                    communication tasks. The assistant helps them draft, refine and manage everyday
+                    work more efficiently.
+                  </p>
+                </div>
+                <div className="rounded-2xl bg-secondary p-5">
+                  <p className="font-semibold text-secondary-foreground">What it includes</p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    A clean workspace interface, prompts for emails, documents, summaries and task
+                    planning, plus guidance for reviewing AI output before use.
+                  </p>
+                </div>
+                <div className="rounded-2xl bg-secondary p-5">
+                  <p className="font-semibold text-secondary-foreground">Skills demonstrated</p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Practical AI integration, workflow design, user-centred thinking, attention to
+                    detail and responsible use of AI in a work context.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Button asChild variant="hero">
+                  <a href="#" aria-label="View the AI Workspace Assistant project (link to be added)">
                     View Project <ExternalLink />
                   </a>
                 </Button>
