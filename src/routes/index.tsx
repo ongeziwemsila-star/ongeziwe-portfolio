@@ -120,6 +120,39 @@ const education = [
   },
 ];
 
+const certifications = [
+  {
+    title: "Discover the art of prompting",
+    issuer: "Google AI Essentials",
+    detail: "Learned how to write clear, specific prompts to get useful, accurate responses from AI tools.",
+  },
+  {
+    title: "Google AI Essentials",
+    issuer: "Google",
+    detail: "Covered core AI concepts, practical workplace applications and responsible AI use.",
+  },
+  {
+    title: "Introduction to AI",
+    issuer: "Google",
+    detail: "Built a solid foundation in artificial intelligence, machine learning basics and real-world use cases.",
+  },
+  {
+    title: "Maximize productivity with AI tools",
+    issuer: "Google",
+    detail: "Explored how AI assistants can streamline routine tasks, drafting, research and daily workflows.",
+  },
+  {
+    title: "Stay ahead of the AI curve",
+    issuer: "Google",
+    detail: "Developed awareness of emerging AI trends and how to keep skills current in a changing workplace.",
+  },
+  {
+    title: "Use AI responsibly",
+    issuer: "Google",
+    detail: "Learned about fairness, accuracy, privacy and transparency when using AI in professional settings.",
+  },
+];
+
 const experience = [
   {
     role: "Administrative Assistant / Internship",
