@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowRight,
+  Award,
   BadgeCheck,
   BrainCircuit,
   Briefcase,
