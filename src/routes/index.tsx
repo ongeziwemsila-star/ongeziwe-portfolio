@@ -18,9 +18,9 @@ import { Button } from "@/components/ui/button";
 import { Section, Pill } from "@/components/portfolio/Section";
 import { SiteNav } from "@/components/portfolio/SiteNav";
 
-const TITLE = "Ongeziwe — Entry-Level IT Support & Data Administration Portfolio";
+const TITLE = "Ongeziwe Msila — Entry-Level IT Support & Data Administration Portfolio";
 const DESCRIPTION =
-  "Portfolio of Ongeziwe: NQF Level 5 IT System Support, administrative assistant experience and four years of customer support, seeking IT support, administration, data and back-office roles.";
+  "Portfolio of Ongeziwe Msila: NQF Level 5 IT System Support, administrative assistant experience and four years of customer support, seeking IT support, administration, data and back-office roles."
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,7 +40,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          name: "Ongeziwe",
+          name: "Ongeziwe Msila",
           jobTitle: "Entry-Level IT Support | Administrative Support | Data & Back-Office Operations",
           description: DESCRIPTION,
         }),
@@ -177,7 +177,7 @@ function Portfolio() {
                 <Sparkles className="size-3.5" /> Open to entry-level IT, admin & data roles
               </span>
               <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-6xl">
-                Ongeziwe
+                Ongeziwe Msila
               </h1>
               <p className="mt-4 text-lg font-medium text-gradient-brand sm:text-xl">
                 Entry-Level IT Support | Administrative Support | Data &amp; Back-Office Operations
@@ -519,7 +519,7 @@ function Portfolio() {
 
       <footer className="border-t border-border py-8">
         <div className="mx-auto max-w-6xl px-5 text-sm text-muted-foreground sm:px-8">
-          © {new Date().getFullYear()} Ongeziwe — Entry-Level IT Support, Administration &amp; Data
+          © {new Date().getFullYear()} Ongeziwe Msila — Entry-Level IT Support, Administration &amp; Data
           Portfolio
         </div>
       </footer>
