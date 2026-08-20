@@ -20,7 +20,7 @@ import { SiteNav } from "@/components/portfolio/SiteNav";
 
 const TITLE = "Ongeziwe Msila — Entry-Level IT Support & Data Administration Portfolio";
 const DESCRIPTION =
-  "Portfolio of Ongeziwe Msila: NQF Level 5 IT System Support, administrative assistant experience and four years of customer support, seeking IT support, administration, data and back-office roles.;
+  "Portfolio of Ongeziwe Msila: NQF Level 5 IT System Support, administrative assistant experience and four years of customer support, seeking IT support, administration, data and back-office roles."
 
 export const Route = createFileRoute("/")({
   head: () => ({
